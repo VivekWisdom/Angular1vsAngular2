@@ -1,0 +1,17 @@
+{
+  "name": "angular_1_calender",
+  "version": "1.0.0",
+  "description": "Angular 1 performance demo",
+  "main": "app.js",
+  "scripts": {
+    "start": "http-server -c-1 -p 9090"
+  },
+  "author": "@vivekwisdom",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "^1.5.3",
+    "angular-route": "^1.5.3",
+    "http-server": "^0.9.0",
+    "underscore": "^1.8.3"
+  }
+}

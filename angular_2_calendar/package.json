@@ -1,0 +1,24 @@
+{
+  "name": "angular_2_calendar",
+  "version": "1.0.0",
+  "description": "Angular 2 performance demo",
+  "main": "app.js",
+  "dependencies": {
+    "angular2": "2.0.0-alpha.13",
+    "es6-module-loader": "0.14.0",
+    "hammerjs": "2.0.4",
+    "lodash": "3.4.0",
+    "rtts_assert": "2.0.0-alpha.8",
+    "systemjs": "0.14.1",
+    "traceur": "0.0.85",
+    "zone.js": "0.4.0"
+  },
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  },
+  "scripts": {
+    "start": "http-server -c-1"
+  },
+  "author": "",
+  "license": "MIT"
+}

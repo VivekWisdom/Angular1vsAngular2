@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Angular 1 Performance Demo</title>
+        <style>
+            body {
+                font-family: arial;
+            }
+
+        </style>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body ng-app="angular1CalendarApp">
+        <h1>Angular 1 Performance Demo</h1>
+        <calendar></calendar>
+
+        <script src="node_modules/angular/angular.js"></script>
+        <script src="node_modules/angular-route/angular-route.js"></script>
+        <script src="node_modules/underscore/underscore.js"></script>
+
+        <script src="app/app.js"></script>
+        <script src="app/directives/calendar.js"></script>
+        <script src="app/directives/calendarcell.js"></script>
+        <script src="app/controllers/calendarCtrl.js"></script>
+        <script src="app/controllers/calendarCellCtrl.js"></script>
+    </body>
+</html>
