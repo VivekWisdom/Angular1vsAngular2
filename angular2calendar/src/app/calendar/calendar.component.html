@@ -1,0 +1,18 @@
+<div class="calendar">
+ <button class="btn" *ngIf="!isLoaded" (click)="load()">Load</button>
+ <button class="btn" *ngIf="isLoaded"  (click)="searchAll()">Search Whole Month</button>
+ <table *ngIf="isLoaded">
+  <tr>
+    <th *ngFor="let day of days"
+        class="day-header"
+        (click)="dayHeaderClicked(day)">
+     {{day}}
+   </th>
+  </tr>
+  <tr *ngFor="let hour of hours">
+   <td *ngFor="let day of days" class="hour-cell">
+     <calendar-cell [hour]="hour" [day]="day"></calendar-cell>
+   </td>
+  </tr>
+ </table>
+</div>
