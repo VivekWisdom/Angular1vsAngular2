@@ -11,7 +11,7 @@ export class StoreService {
   }
 
   searchAllCells() {
-    for (var i=0; i<this.cells.length; i++) {
+    for (let i = 0; i < this.cells.length; i++) {
       this.cells[i].cellClicked();
     }
   }
