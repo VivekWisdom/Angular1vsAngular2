@@ -1,4 +1,3 @@
-<style>
   table {
     border-right: 2px solid gray;
     border-spacing: 0;
@@ -51,21 +50,3 @@
     color: red;
     background: #ffefef;
   }
-</style>
-
-<div class="calendar">
- <button class="btn" *if="!isLoaded" (click)="load()">Load</button>
- <button class="btn" *if="isLoaded"  (click)="searchAll()">Search Whole Month</button>
- <table *if="isLoaded">
-  <tr>
-    <th template="foreach: #day in days" class="day-header" (click)="dayHeaderClicked(day)">
-     {{day}}
-   </th>
-  </tr>
-  <tr template="foreach: #hour in hours">
-   <td template="foreach: #day in days" class="hour-cell">
-     <calendar-cell [hour]="hour" [day]="day" />
-   </td>
-  </tr>
- </table>
-</div>
