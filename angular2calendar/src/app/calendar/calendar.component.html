@@ -2,16 +2,16 @@
  <button class="btn" *ngIf="!isLoaded" (click)="load()">Load</button>
  <button class="btn" *ngIf="isLoaded"  (click)="searchAll()">Search Whole Month</button>
  <table *ngIf="isLoaded">
-  <tr>
-    <th *ngFor="let day of days"
+  <tr *ngIf="cells[0]">
+    <th *ngFor="let day of cells[0].days"
         class="day-header"
         (click)="dayHeaderClicked(day)">
-     {{day}}
+     {{day.day.title}}
    </th>
   </tr>
-  <tr *ngFor="let hour of hours">
-   <td *ngFor="let day of days" class="hour-cell">
-     <calendar-cell [hour]="hour" [day]="day"></calendar-cell>
+  <tr *ngFor="let hour of cells">
+   <td *ngFor="let day of hour.days" class="hour-cell">
+     <calendar-cell [hour]="hour.hour" [option]="day.day.option" [day]="day.day.title"></calendar-cell>
    </td>
   </tr>
  </table>
